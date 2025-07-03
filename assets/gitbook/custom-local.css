@@ -217,10 +217,55 @@
     box-shadow: 0 2px 4px rgba(125, 62, 162, 0.1);
 }
 
-/* Add some RoboHearts brand flair */
-.book-header h1::before {
-    content: "🤖 ";
-    color: var(--accent);
+/* RoboHearts Header with Logo */
+.robohearts-header {
+    padding: 8px 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: var(--primary) !important;
+    transition: opacity 0.2s ease;
+}
+
+.header-brand:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+}
+
+.header-logo {
+    height: 32px;
+    width: auto;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary) !important;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    .header-title {
+        font-size: 16px;
+    }
+    
+    .header-logo {
+        height: 28px;
+        margin-right: 8px;
+    }
+    
+    .robohearts-header {
+        padding: 8px 10px;
+    }
 }
 
 /* Move sidebar to the right */
