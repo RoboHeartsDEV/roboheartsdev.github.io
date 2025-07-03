@@ -222,3 +222,57 @@
     content: "🤖 ";
     color: var(--accent);
 }
+
+/* Move sidebar to the right */
+.book-summary {
+    left: auto !important;
+    right: -300px !important;
+    transition: right 250ms ease !important;
+}
+
+.book.with-summary .book-summary {
+    right: 0 !important;
+}
+
+/* Adjust book body for right sidebar */
+.book-body {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+@media (min-width: 600px) {
+    .book.with-summary .book-body {
+        left: 0 !important;
+        right: 300px !important;
+    }
+}
+
+/* Mobile adjustments for right sidebar */
+@media (max-width: 600px) {
+    .book-summary {
+        right: -100% !important;
+    }
+    
+    .book.with-summary .book-body {
+        transform: translate(calc(-100% + 60px), 0) !important;
+    }
+}
+
+/* Move burger button to the right and style it */
+.book-header .btn {
+    float: right !important;
+    margin-left: auto !important;
+}
+
+/* Hide font settings and sharing buttons */
+.btn[title*="font"], 
+.btn[title*="Font"], 
+.btn[aria-label*="font"],
+.btn[aria-label*="Font"],
+.gitbook-plugin-fontsettings,
+.gitbook-plugin-sharing,
+.fa-font,
+.fa-share,
+.fa-share-alt {
+    display: none !important;
+}
