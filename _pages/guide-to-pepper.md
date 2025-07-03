@@ -6,39 +6,51 @@ permalink: /guide-to-pepper/
 
 Welcome to the Pepper Programming Guide!
 
-So, you want to program your Pepper robot? Here are the main approaches available!
+So, you want to program your Pepper robot? The approach depends on which version you have:
+
+## Pepper 2.9 (Android-based) - Current Generation
 
 | What do you want to do?    | How can you do that? |
 |-|-|
-| Simple visual programming; prototypes; animations    | Use **Choregraphe**, which can be downloaded [here](https://www.aldebaran.com/en/support/pepper/downloads-softwares) and is well-covered by [the NAOqi 2.5 reference documentation](http://doc.aldebaran.com/2-5/index.html) |
+| Learn modern Pepper development | Follow the complete guide at [MyPepperApplication](https://github.com/unitedroboticsgroup-france/MyPepperApplication) - a comprehensive 2025 tutorial for Pepper development |
 |-|-|
-| Build applications in pure Python    | You can develop Python applications using the NAOqi Python SDK for Pepper's operating system |
+| Try Python programming online | Use [pepper.robothearts.dev](https://pepper.robothearts.dev) - an online Jupyter-based Python environment specifically for Pepper |
 |-|-|
-| Android development | Pepper runs on Android, so you can develop native Android applications using the [Pepper SDK for Android](https://developer.softbankrobotics.com/pepper-naoqi-25-documentation/pepper-sdk-android) |
+| Android app development | Build native Android applications using the Pepper SDK for Android |
 |-|-|
-| Web-based applications | Create tablet applications using HTML/CSS/JavaScript that run on Pepper's built-in tablet |
+| Add AI conversations | Integrate [robohearts.ai](https://robohearts.ai) - an LLM-based conversation solution that works seamlessly with Pepper 2.9 |
+|-|-|
+| Explore libraries and examples | Check out [SoftBank Robotics Labs](https://github.com/softbankrobotics-labs/) for useful libraries and code examples |
 
-## Getting Started
+## Pepper 2.5 (Python-based) - Legacy Systems
 
-Pepper uses NAOqi 2.5 as its operating system, which provides APIs for:
-- **Motion control** - Moving Pepper's arms, head, and base
-- **Speech recognition and synthesis** - Making Pepper talk and understand voice commands
-- **Vision** - Using Pepper's cameras for face detection, object recognition, etc.
-- **Touch sensors** - Responding to touch on Pepper's head and hands
-- **Tablet interaction** - Controlling the tablet display for user interfaces
+Many Pepper robots still run NAOqi 2.5. For these systems:
 
-## Development Environment
+| What do you want to do?    | How can you do that? |
+|-|-|
+| Visual programming; prototypes; animations | Use **Choregraphe**, downloadable [here](https://www.aldebaran.com/en/support/pepper/downloads-softwares) with [NAOqi 2.5 documentation](http://doc.aldebaran.com/2-5/index.html) |
+|-|-|
+| Python development | Most [NAO Python examples]({{ site.baseurl }}/guide-to-nao/) work on Pepper 2.5 since they share the same NAOqi foundation |
+|-|-|
+| Add AI conversations | Use [robohearts.ai](https://robohearts.ai) which supports both NAO and Pepper 2.5 systems |
 
-To get started with Pepper development:
+## Quick Start Resources
 
-1. **Download Choregraphe** from the SoftBank Robotics developer portal
-2. **Set up the Python SDK** for programmatic control
-3. **Configure your development environment** to connect to your Pepper robot
-4. **Explore the documentation** and sample projects
+### For Pepper 2.9 (Android)
+- 🚀 **Start here**: [MyPepperApplication Tutorial](https://github.com/unitedroboticsgroup-france/MyPepperApplication)
+- 💻 **Online coding**: [pepper.robothearts.dev](https://pepper.robothearts.dev)
+- 📚 **Code examples**: [SoftBank Robotics Labs](https://github.com/softbankrobotics-labs/)
+- 🤖 **AI integration**: [robohearts.ai](https://robohearts.ai)
 
-## Resources
+### For Pepper 2.5 (Python)
+- 📖 **Documentation**: [NAOqi 2.5 Reference](http://doc.aldebaran.com/2-5/index.html)
+- 🎨 **Visual programming**: [Choregraphe Downloads](https://www.aldebaran.com/en/support/pepper/downloads-softwares)
+- 🐍 **Python examples**: Use our [NAO guide]({{ site.baseurl }}/guide-to-nao/) - most examples work on Pepper 2.5
+- 🤖 **AI integration**: [robohearts.ai](https://robohearts.ai)
 
-- [Official Pepper Documentation](https://developer.softbankrobotics.com/pepper-naoqi-25-documentation)
-- [Choregraphe User Guide](http://doc.aldebaran.com/2-5/software/choregraphe/index.html)
-- [Python SDK Documentation](http://doc.aldebaran.com/2-5/dev/python/index.html)
-- [Android SDK for Pepper](https://developer.softbankrobotics.com/pepper-naoqi-25-documentation/pepper-sdk-android)
+## Not Sure Which Version You Have?
+
+- **Pepper 2.9**: Has Android tablet interface, more modern UI
+- **Pepper 2.5**: Uses the traditional NAOqi interface similar to NAO
+
+When in doubt, check your robot's system information or contact your robot supplier.
