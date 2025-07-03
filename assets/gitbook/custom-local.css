@@ -268,6 +268,74 @@
     }
 }
 
+/* Robot Guide Cards Styling */
+.robot-guides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.guide-card {
+    background: var(--base-200);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(125, 62, 162, 0.15);
+}
+
+.guide-card h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.guide-card h2 a {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+}
+
+.guide-card h2 a:hover {
+    color: var(--primary-dark) !important;
+}
+
+.guide-card p {
+    color: var(--neutral);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.guide-button {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--base-100) !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.guide-button:hover {
+    background: var(--primary-dark) !important;
+    color: var(--base-100) !important;
+}
+
+@media (max-width: 600px) {
+    .robot-guides {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .guide-card {
+        padding: 1rem;
+    }
+}
+
 /* Move sidebar to the right */
 .book-summary {
     left: auto !important;

@@ -1,18 +1,28 @@
 ---
 layout: home
-title: RoboHearts DEV - Guide to NAO
+title: RoboHearts DEV - Robot Programming Guides
 permalink: /
 ---
 
 Welcome to RoboHearts DEV!
 
-So, you wand to program your NAO robot? There are many ways to do that!
+Choose your robot to get started with programming:
 
-| What do you want to do?    | How can you do that? |
-|-|-|
-| Simple visual programming; prototypes; animations    | Use **Choregraphe**, which can be downloaded [here](https://www.aldebaran.com/en/support/nao-6/downloads-softwares) and is well-covered by [the NAOqi 2.8 reference documentation](http://doc.aldebaran.com/2-8/index.html) |
-|-|-|
-| Build applications in pure Python    | You can do that either [in Python 2](./nao/2023-11-09-nao-python) (works out of the box), or [in Python 3](./nao/2023-11-10-nao-python3) (requires installing an extra package)|
-|-|-|
-| Use ROS | See  [ROS for NAO](./nao/2023-11-20-nao-ros)|
+<div class="robot-guides">
+  <div class="guide-card">
+    <h2><a href="{{ site.baseurl }}/guide-to-nao/">Guide to NAO</a></h2>
+    <p>Learn to program the NAO humanoid robot using Choregraphe, Python, or ROS. Perfect for education and research applications.</p>
+    <a href="{{ site.baseurl }}/guide-to-nao/" class="guide-button">Start with NAO →</a>
+  </div>
+  
+  <div class="guide-card">
+    <h2><a href="{{ site.baseurl }}/guide-to-pepper/">Guide to Pepper</a></h2>
+    <p>Discover how to develop applications for Pepper using visual programming, Python, Android, or web technologies.</p>
+    <a href="{{ site.baseurl }}/guide-to-pepper/" class="guide-button">Start with Pepper →</a>
+  </div>
+</div>
+
+## About RoboHearts DEV
+
+RoboHearts DEV provides comprehensive programming guides for SoftBank Robotics' humanoid robots. Whether you're a beginner looking to create your first robot behavior or an experienced developer building complex applications, our guides will help you get started quickly and effectively.
 
