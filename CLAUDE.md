@@ -119,9 +119,47 @@ layout: post
 ```
 
 ## Development Environment Setup
-1. Ensure Ruby is installed
-2. Run `bundle install` to install Jekyll and dependencies
-3. Use `bundle exec jekyll serve` for local development
-4. Site will be available at `http://localhost:4000/landing`
+
+### Ruby Installation (Ubuntu)
+1. **Install rbenv and Ruby**:
+   ```bash
+   # Install rbenv (Ruby version manager)
+   sudo apt install rbenv
+   
+   # Install Ruby 3.4.4 (tested version)
+   rbenv install 3.4.4
+   rbenv local 3.4.4
+   
+   # Install bundler
+   gem install bundler
+   ```
+
+2. **Alternative - System Ruby**:
+   ```bash
+   # Install Ruby via apt (simpler but less flexible)
+   sudo apt update
+   sudo apt install ruby-full build-essential zlib1g-dev
+   gem install bundler
+   ```
+
+### Local Development
+1. Install Jekyll dependencies: `bundle install`
+2. Start development server: `bundle exec jekyll serve`
+3. Site will be available at: `http://localhost:4000/landing`
+
+### Additional Jekyll Commands
+```bash
+# Build for production
+bundle exec jekyll build
+
+# Serve with live reload
+bundle exec jekyll serve --livereload
+
+# Include draft posts
+bundle exec jekyll serve --drafts
+
+# Clean build files
+bundle exec jekyll clean
+```
 
 This site is specifically focused on NAO robot programming education under the RoboHearts DEV brand and follows Jekyll best practices with a custom GitBook-style theme for technical documentation.
