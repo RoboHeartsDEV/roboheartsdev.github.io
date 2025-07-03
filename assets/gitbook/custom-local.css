@@ -1,0 +1,224 @@
+/* RoboHearts DEV Custom Color Scheme */
+:root {
+    /* RoboHearts DEV Brand Colors */
+    --primary: #7D3EA2;         /* Deep purple */
+    --primary-dark: #6B2C91;    /* Darker purple */
+    --secondary: #945CC1;       /* Medium purple */
+    --accent: #38B2AC;          /* Soft teal complement */
+    --neutral: #2D3748;         /* Charcoal for text */
+    --base-100: #FFFFFF;        /* Clean white background */
+    --base-200: #F7F8FA;        /* Light gray for sections */
+    --border: #DCC6F1;          /* Light purple for borders/highlights */
+    
+    /* Update existing color variables to match RoboHearts theme */
+    --c-tip: #38B2AC;           /* Use accent teal for tips */
+    --c-tip-bg: #E6FFFA;        /* Light teal background for tips */
+    --c-tip-text: #2D3748;      /* Neutral text */
+    --c-tip-title: #319795;     /* Darker teal for tip titles */
+    
+    --c-warning: #ED8936;       /* Orange for warnings */
+    --c-warning-bg: #FFFAF0;    /* Light orange background */
+    --c-warning-text: #7B341E;  /* Dark orange text */
+    --c-warning-title: #C05621; /* Darker orange for titles */
+    
+    --c-danger: #E53E3E;        /* Red for danger */
+    --c-danger-bg: #FED7D7;     /* Light red background */
+    --c-danger-text: #742A2A;   /* Dark red text */
+    --c-danger-title: #C53030;  /* Darker red for titles */
+}
+
+/* Apply RoboHearts brand colors to key elements */
+
+/* Header and navigation */
+.book-header {
+    background: var(--base-100) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.book-header .btn {
+    color: var(--primary) !important;
+}
+
+.book-header .btn:hover {
+    color: var(--primary-dark) !important;
+    background: var(--base-200) !important;
+}
+
+.book-header h1 {
+    color: var(--primary) !important;
+}
+
+/* Summary/sidebar */
+.book-summary {
+    background: var(--base-200) !important;
+    border-right: 1px solid var(--border);
+}
+
+.book-summary ul.summary li a {
+    color: var(--neutral) !important;
+}
+
+.book-summary ul.summary li a:hover {
+    color: var(--primary) !important;
+    background: var(--base-100) !important;
+}
+
+.book-summary ul.summary li.active > a {
+    color: var(--primary) !important;
+    background: var(--base-100) !important;
+    border-left: 4px solid var(--primary);
+}
+
+.book-summary ul.summary li.header {
+    color: var(--secondary) !important;
+}
+
+/* Main content area */
+.book-body {
+    background: var(--base-100) !important;
+}
+
+/* Links */
+.markdown-section a {
+    color: var(--primary) !important;
+}
+
+.markdown-section a:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Headings */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+    color: var(--primary) !important;
+}
+
+/* Tables */
+.markdown-section table th {
+    background: var(--base-200) !important;
+    color: var(--neutral) !important;
+    border-color: var(--border) !important;
+}
+
+.markdown-section table td {
+    border-color: var(--border) !important;
+}
+
+.markdown-section table tr:nth-child(2n) {
+    background: var(--base-200) !important;
+}
+
+/* Code blocks */
+.markdown-section pre {
+    background: var(--base-200) !important;
+    border: 1px solid var(--border);
+}
+
+.markdown-section code {
+    background: var(--base-200) !important;
+    color: var(--neutral) !important;
+}
+
+/* Blockquotes */
+.markdown-section blockquote {
+    border-left: 4px solid var(--border);
+    background: var(--base-200) !important;
+    color: var(--neutral) !important;
+}
+
+/* Navigation buttons */
+.navigation {
+    color: var(--primary) !important;
+}
+
+.navigation:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Search */
+#book-search-input {
+    background: var(--base-200) !important;
+    border-color: var(--border) !important;
+}
+
+#book-search-input input {
+    color: var(--neutral) !important;
+}
+
+#book-search-input input::placeholder {
+    color: var(--secondary) !important;
+}
+
+/* Buttons */
+.button {
+    background: var(--primary) !important;
+    color: var(--base-100) !important;
+}
+
+.button:hover {
+    background: var(--primary-dark) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: var(--border) !important;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--border) !important;
+}
+
+/* Back to top button */
+.back-to-top {
+    background: var(--primary) !important;
+    color: var(--base-100) !important;
+}
+
+.back-to-top:hover {
+    background: var(--primary-dark) !important;
+}
+
+/* Color theme overrides */
+.book.color-theme-1 .book-body .book-header {
+    background: var(--base-200) !important;
+}
+
+.book.color-theme-2 .book-body .book-header {
+    background: var(--neutral) !important;
+}
+
+.book.color-theme-2 .book-body .book-header .btn {
+    color: var(--base-100) !important;
+}
+
+.book.color-theme-2 .book-body .book-header h1 {
+    color: var(--base-100) !important;
+}
+
+/* Ensure good contrast for readability */
+.markdown-section {
+    color: var(--neutral) !important;
+}
+
+/* Special styling for home page welcome message */
+.page-inner h1:first-child {
+    color: var(--primary) !important;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* Style the main navigation table on homepage */
+.markdown-section table {
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 4px rgba(125, 62, 162, 0.1);
+}
+
+/* Add some RoboHearts brand flair */
+.book-header h1::before {
+    content: "🤖 ";
+    color: var(--accent);
+}
