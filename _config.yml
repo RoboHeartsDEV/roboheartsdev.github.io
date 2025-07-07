@@ -52,6 +52,10 @@ github_username: RoboHeartsDEV
 exclude:
   - _drafts
 
+# Include assets in build
+include:
+  - assets
+
 collections:
   pages:
     output: true
