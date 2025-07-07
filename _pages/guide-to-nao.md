@@ -4,6 +4,11 @@ title: Guide to NAO
 permalink: /guide-to-nao/
 ---
 
+<div class="guide-header">
+    <img src="{{ site.baseurl }}/assets/nao_logo.svg" alt="NAO Robot" class="robot-logo">
+    <h1>Guide to NAO</h1>
+</div>
+
 Welcome to the NAO Programming Guide!
 
 So, you want to program your NAO robot? There are many ways to do that!
@@ -20,11 +25,11 @@ So, you want to program your NAO robot? There are many ways to do that!
 
 ## Quick Start Resources
 
-- 🎨 **Visual programming**: [Choregraphe Downloads](https://www.aldebaran.com/en/support/nao-6/downloads-softwares)
-- 📖 **Documentation**: [NAOqi 2.8 Reference](http://doc.aldebaran.com/2-8/index.html)
-- 🐍 **Python tutorials**: See our detailed [Python 2]({{ site.baseurl }}/nao/2023-11-09-nao-python) and [Python 3]({{ site.baseurl }}/nao/2023-11-10-nao-python3) guides
-- 🤖 **ROS integration**: [ROS for NAO]({{ site.baseurl }}/nao/2023-11-20-nao-ros) tutorial
-- 🤖 **AI conversations**: [robohearts.ai](https://robohearts.ai) for intelligent dialogue capabilities
+- **Visual programming**: [Choregraphe Downloads](https://www.aldebaran.com/en/support/nao-6/downloads-softwares)
+- **Documentation**: [NAOqi 2.8 Reference](http://doc.aldebaran.com/2-8/index.html)
+- **Python tutorials**: See our detailed [Python 2]({{ site.baseurl }}/nao/2023-11-09-nao-python) and [Python 3]({{ site.baseurl }}/nao/2023-11-10-nao-python3) guides
+- **ROS integration**: [ROS for NAO]({{ site.baseurl }}/nao/2023-11-20-nao-ros) tutorial
+- **AI conversations**: [robohearts.ai](https://robohearts.ai) for intelligent dialogue capabilities
 
 ## Compatible with Pepper 2.5
 
