@@ -10,7 +10,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://roboheartsdev.github.io'
-baseurl:          '/landing'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the local theme files
@@ -51,10 +51,6 @@ github_username: RoboHeartsDEV
 
 exclude:
   - _drafts
-
-# Include assets in build
-include:
-  - assets
 
 collections:
   pages:
