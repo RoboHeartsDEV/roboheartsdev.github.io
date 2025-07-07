@@ -432,3 +432,14 @@
 .fa-share-alt {
     display: none !important;
 }
+
+/* Hide GitHub links that appear in header */
+.btn[href*="github"],
+.btn[title*="github"],
+.btn[title*="GitHub"],
+.btn[aria-label*="github"],
+.btn[aria-label*="GitHub"],
+a[href*="github.com"]:not(.markdown-section a),
+.fa-github {
+    display: none !important;
+}
