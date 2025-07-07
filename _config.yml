@@ -13,8 +13,7 @@ url:              'https://roboheartsdev.github.io'
 baseurl:          '/landing'
 rss:              RSS
 
-# bootstrap: use the remote theme for the site itself
-remote_theme: RoboHeartsDEV/guide-to-nao
+# bootstrap: use the local theme files
 
 toc:
   enabled: true
