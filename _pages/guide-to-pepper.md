@@ -55,3 +55,4 @@ There are two main approaches for making applications:
 |-|-|
 | Python development | Most [NAO Python examples]({{ site.baseurl }}/guide-to-nao/) work on Pepper 2.5 since they share the same NAOqi foundation; A good starting point is [Robot Jumstarter](https://github.com/aldebaran/robot-jumpstarter) that has templtes for Pepper that include tablet examples. |
 |-|-|
+
