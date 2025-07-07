@@ -51,8 +51,7 @@ There are two main approaches for making applications:
 
 | What do you want to do?    | How can you do that? |
 |-|-|
-| Visual programming; prototypes; animations | Use **Choregraphe**, downloadable [here](https://aldebaran.com/en/support/kb/softwares/downloads-softwares/pepper-2-5-downloads/) with [NAOqi 2.5 documentation](http://doc.aldebaran.com/2-5/index.html) |
+| Visual programming; prototypes; animations | Use **Choregraphe**, downloadable [here](https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/) with [NAOqi 2.5 documentation](http://doc.aldebaran.com/2-5/index.html) |
 |-|-|
 | Python development | Most [NAO Python examples]({{ site.baseurl }}/guide-to-nao/) work on Pepper 2.5 since they share the same NAOqi foundation; A good starting point is [Robot Jumstarter](https://github.com/aldebaran/robot-jumpstarter) that has templtes for Pepper that include tablet examples. |
 |-|-|
-
