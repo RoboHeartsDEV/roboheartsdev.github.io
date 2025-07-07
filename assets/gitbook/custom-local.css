@@ -340,6 +340,7 @@
 .guide-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 2rem;
     gap: 1rem;
 }
@@ -353,6 +354,11 @@
 .guide-header h1 {
     margin: 0;
     color: var(--primary) !important;
+}
+
+/* Hide the template-generated title for guide pages */
+.markdown-section h1[id*="guide-to"] {
+    display: none;
 }
 
 @media (max-width: 600px) {
